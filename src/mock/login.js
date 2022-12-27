@@ -2,7 +2,6 @@ import Mock from 'mockjs';
 
 Mock.mock('/api/login', 'post', (req) => {
   const body = JSON.parse(req.body);
-  console.log(typeof body);
   if (body.user === 'admin' && body.password === '123456') {
     return {
       code: 200,
