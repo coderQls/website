@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-createApp(App).mount('#app')
+import './assets/style/common.css';
+import './assets/style/normalize.css';
+
+import './mock/index.js';
+
+createApp(App).use(router).mount('#app');
