@@ -6,13 +6,20 @@
     "moduleResolution": "Node",
     "strict": true,
     "jsx": "preserve",
+    "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "noEmit": false
+    "noEmit": false,
+    "types": ["element-plus/global"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/main.ts", "src/main.ts", "src/mock/index.js", "src/mock/index.js"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/main.ts", "src/main.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
